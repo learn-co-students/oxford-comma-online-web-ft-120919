@@ -7,19 +7,14 @@ def oxford_comma(array)
         array.join(", ")
     elsif array.length > 1 && array.length < 3
         array.join(" and ")
-        
     else array.length > 2
-        array.join(", ") + array[-1].insert(0, " and ")
+        array[-1].insert(0, "and ")
+        array.join(", ")
     end
-    # binding.pry
-    # array.join(", ")
 end
 
-# array.join(", ")
+# binding.pry
 
-# def commas_with_and(arr)
-#     arr[0..-2].join(", ") << " and " << arr[-1]
-#   end
 
 # def oxford_comma(array)
 #     new_array = array.join(", ") 

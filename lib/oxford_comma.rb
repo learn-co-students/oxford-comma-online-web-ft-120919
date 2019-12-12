@@ -1,8 +1,26 @@
+
+
+
+
 def oxford_comma(array)
-  result_array = array.join()
-  if result_array == 2 
-    result_array = array.join("and")
+  result_string = ""
+  if array.length == 2 
+    result_string = array.join(" and ")
+  elsif array.length == 1  
+    result_string = array.join()
+  elsif array.length >= 3
+    array.each_with_index do |fruit, index| 
+      if  fruit != array[-1]
+    end
+        
+        
+    
+    
+    
+    end 
+  
+    
     
   end
-  result_array
+  result_string
 end 

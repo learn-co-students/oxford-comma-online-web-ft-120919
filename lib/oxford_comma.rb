@@ -1,5 +1,4 @@
-
-
+require "pry"
 
 
 def oxford_comma(array)
@@ -9,18 +8,9 @@ def oxford_comma(array)
   elsif array.length == 1  
     result_string = array.join()
   elsif array.length >= 3
-    array.each_with_index do |fruit, index| 
-      if  fruit != array[-1]
-    end
-        
-        
-    
-    
-    
-    end 
-  
-    
-    
-  end
+  #binding.pry 
+    array[-1].insert(0, "and ")
+    result_string = array.join(", ")
+   end
   result_string
-end 
+end
